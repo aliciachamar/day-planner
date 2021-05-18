@@ -28,6 +28,7 @@ for (let i = 0; i < $saveBtns.length; i++) {
 }
 
 function saveData() {
+    alert("Data saved to localStorage!");
     const tasks = $(this).siblings("textarea");
     const hour = tasks.attr("id");
     localStorage.setItem(hour, tasks.val());
