@@ -2,4 +2,4 @@ This is a simple day planner that allows the user to input data or tasks into ea
 
 URL: https://aliciachamar.github.io/day-planner/
 
-![Screenshot]()
+![Screenshot](https://raw.githubusercontent.com/aliciachamar/day-planner/main/assets/images/screenshot.PNG)
