@@ -13,6 +13,15 @@ for (let i = 0; i < $textAreas.length; i++) {
     }
 }
 
+function getStoredTasks() {
+    for (let i = 0; i < $textAreas.length; i++) {
+        let storedTasks = localStorage.getItem($textAreas[i].id);
+        $textAreas[i].textContent = storedTasks;
+    }
+}
+
+getStoredTasks();
+
 const $saveBtns = $(".saveBtn");
 for (let i = 0; i < $saveBtns.length; i++) {
     $saveBtns[i].addEventListener("click", saveData);
@@ -23,12 +32,3 @@ function saveData() {
     const hour = tasks.attr("id");
     localStorage.setItem(hour, tasks.val());
 }
-
-function getStoredTasks() {
-    for (let i = 0; i < $textAreas.length; i++) {
-        let storedTasks = localStorage.getItem($textAreas[i].id);
-        $textAreas[i].textContent = storedTasks;
-    }
-}
-
-getStoredTasks();
